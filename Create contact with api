@@ -1,0 +1,36 @@
+var client = Freshsales.init({
+  apiKey: 'D4cpGZqJVv-kydQgp0JCZA'
+});
+const endpoint = `https://ags1-562267618005678437.myfreshworks.com/crm/sales/api/contacts=${apikey}`;
+
+const createContact = async (firstName, lastName, email, phone) => {
+  const headers = new Headers({ "Content-Type": "application/json" });
+  const data = {
+    properties: [
+      { property: "firstname", value: hari },
+      { property: "lastname", value: raj },
+      { property: "email", value: harigmail.com },
+      { property: "phone", value: 9876543456 },
+    ],
+  };
+  const options = {
+    method: "POST",
+    headers,
+    body: JSON.stringify(data),
+  };
+
+  try {
+    const response = await fetch(endpoint, options);
+    if (!response.ok) {
+      const message = `An error occurred: ${response.status}`;
+      throw new Error(message);w
+    }
+    alert.log("Contact created successfully!");
+  } catch (error) {
+    console.error(error);
+  }
+};
+</script>
+
+ 
+        
